@@ -60,16 +60,10 @@
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--bg-color-btn);
-}
-
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: var(--bg-color-btn);
+  }
 }
 
 .social-icon {
@@ -78,4 +72,8 @@
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: #ffffff;
+  }
 }
